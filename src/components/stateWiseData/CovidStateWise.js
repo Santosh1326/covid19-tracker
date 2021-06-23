@@ -41,7 +41,7 @@ const CovidStateWise = () => {
                             {
                                 data.map((currentElement, index) =>{
                                     return(
-                                        <tr>
+                                        <tr key={index}>
                                             <td> {currentElement.state} </td>
                                             <td> {currentElement.active} </td>
                                             <td> {currentElement.confirmed} </td>
